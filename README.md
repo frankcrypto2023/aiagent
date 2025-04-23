@@ -18,7 +18,7 @@ AIAgent 接收需求后
 {
   "model": "gpt-4",
   "messages": [
-    {"role": "user", "content": "今天北京的天气怎么样？"}
+    {"role": "user", "content": "工号是 123 的员工叫什么，邮箱是多少？"}
   ],
   "tools": [
     // 可以定义更多工具
