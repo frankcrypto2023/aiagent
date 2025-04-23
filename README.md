@@ -134,10 +134,12 @@ AiAgent 继续调用大模型
 ```
 从这里调用可以看出 模型的role 就分user | assistant | tool
 大模型最终返回 
+```json
 {
   "role": "assistant",
   "content": "工号是 123 的员工是张三，他的邮箱是 zhang.san@example.com。"
 }
+```
 然后AiAgent 再将这个结果返回给用户
 
 也就是用户 问话 得到最终结果，中间过程是AiAgent自己去完成，这个toolAgent 现在就统一MCP Client与Server来完成了，
